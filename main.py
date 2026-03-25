@@ -16,7 +16,7 @@ class AvocadoSchema(BaseModel):
     sound_db:int
     weight_g:int
     size_cm3:int
-    color_category:int
+    color_category:str
 
 
 @avocado_app.post('/predict')
