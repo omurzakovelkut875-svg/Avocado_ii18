@@ -12,7 +12,7 @@ brightness = st.number_input('Яркость кожицы', min_value=0, max_val
 sound_db = st.number_input('Звук при постукивании (дБ)', min_value=0, max_value=100, step=1)
 weight_g = st.number_input('Масса плода (г)', min_value=50, max_value=500, step=10)
 size_cm3 = st.number_input('Объем плода (см3)', min_value=50, max_value=600, step=10)
-color_category = st.number_input('Категория цвета', min_value=0, max_value=3, step=1)
+color_category = st.selectbox('Категория цвета', [0, 1, 2, 3])
 
 avocado_data = {
     'firmness': firmness,
